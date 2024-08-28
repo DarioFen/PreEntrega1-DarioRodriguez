@@ -11,12 +11,12 @@ function calcular (salario, solicitado, cuotas, sucursal) {
         tasaPorcentaje = 7.5
     }
     
-    const deudaTotal = solicitado + ((tasaPorcentaje * solicitado) / 100)
+    const deudaTotal = solicitado + ((tasaPorcentaje * solicitado) / 100);
     const valorCuota = (deudaTotal / cuotas);
     const maximoPermitidoValorCuota = (limitePorcentajeValorCuota * salario) / 100;
 
     if(valorCuota > maximoPermitidoValorCuota) {
-        return console.log("El valor de la cuota supera el 20% de su salario, lamentamos no poder confirmar su solicitud")
+        return console.log("El valor de la cuota supera el 20% de su salario, lamentamos no poder confirmar su solicitud");
     }
     console.log("Valor solicitado: $" + solicitado);
     console.log("Cantidad de cuotas: " + cuotas);
@@ -95,7 +95,7 @@ function calcular (salario, solicitado, cuotas, sucursal) {
 /**
  * CODIGO
  */
-const bienvenida = alert("Bienvenido a superBank!")
+alert("Bienvenido a superBank!");
 const nombre = prompt("Ingrese su nombre");
 
 alert("Bienvenido " + nombre + " a nuestro calculador de prestamos, a continuacion le pediremos algunos datos relevantes para poder pasarle un detalle de su solicitud");
