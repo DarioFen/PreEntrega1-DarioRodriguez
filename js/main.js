@@ -91,10 +91,11 @@ function calcular (salario, solicitado, cuotas, sucursal) {
 }
 
 
+
 /**
  * CODIGO
  */
-
+const bienvenida = alert("Bienvenido a superBank!")
 const nombre = prompt("Ingrese su nombre");
 
 alert("Bienvenido " + nombre + " a nuestro calculador de prestamos, a continuacion le pediremos algunos datos relevantes para poder pasarle un detalle de su solicitud");
